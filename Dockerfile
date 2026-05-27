@@ -1,5 +1,6 @@
 FROM nousresearch/hermes-agent:latest
 
 EXPOSE 8642
+EXPOSE 9119
 
-CMD ["dashboard", "--host", "0.0.0.0", "--port", "8642"]
+CMD ["gateway","run"]
